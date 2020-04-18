@@ -1,91 +1,91 @@
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
 
+li a {
+    text-decoration: none;
+    color:white;
+    width:100%;
+    margin-bottom:2%;
+    text-align: center;
+    display:inline-block;
+    padding:10px 0px;
+}
+/*home style*/
+.list1 { 
+    background-color: rgb(105, 236, 105);
+}
+/*about style*/
+.list2 {
+    background-color: rgb(18, 104, 18);
+}
+/*home style*/
+.list3 {
+    background-color: rgb(241, 241, 11);
+}
+/*more style*/
+.list4 {
+    background-color: rgb(245, 66, 140);
+}
+/*contact style*/
+.list5 { 
+    background-color: rgb(85, 4, 74);
+}
 
-            ul{
-                list-style-type:none;
-                margin-top:100px;
-                padding:0;
-                
-            }
+@media only screen and (min-width:700px){
+    .container{
+        width:100%;
+        margin-right:auto;
+        margin-left: auto;
+    }
 
-            li{
-                float:left;
-                border:1px solid transparent;
-                border-radius: 20px;
-                
-                
-            }
+    .container::after{
+        clear:both;
+        content:"";
+        display:table;
+    }
 
-            li a{
-                
-                text-decoration: none;
-                padding: 10px 80px;
-                display:inline-block;
-                color:white;
-                
-            }
+    li {
+        float:left;
+        width:20%;
+    }
 
-            .class1{
-                background-color: rgb(105, 236, 105);
-                z-index:0px;
-                
-            }
+    li a {
+        margin-bottom:0;
+        border-radius: 30px;
+        text-align: center;
+    }
 
-            .class2{
-                position: absolute;
-                left:150px;
-                background-color: rgb(18, 104, 18);
-                z-index: 1;
+    ul {
+        position: relative;
+    }
+    /*about position*/
+    .pos-list2 {
+        position: absolute;
+        left:16%;
+        z-index:1;
+    }
+    /*home position*/
+    .pos-list3 {
+        position: absolute;
+        left:32%;
+        z-index:1;
+    }
+    /*contact position*/
+    .pos-list4{
+        position: absolute;
+        bottom:20;
+        left:48%;
+        z-index:1;
+    }
+    /*more position*/
+    .pos-list5 {
+        position: absolute;
+        bottom:20;
+        left:64%;
+        z-index:1;
+    }
+}
 
-            }
-
-            .class3{
-                position:absolute;
-                left:310px;
-                background-color: rgb(241, 241, 11);
-                z-index: 1;
-
-            }
-
-            .class4{
-                position:absolute;
-                left:470px;
-                background-color: rgb(245, 66, 140);
-                z-index:1;
-
-            }
-
-            .class5{
-                position:absolute;
-                left:620px;
-                background-color: rgb(85, 4, 74);
-                z-index:1;
-
-            }
-
-            @media screen and (max-width:600px){
-                li a{
-                
-                    text-decoration: none;
-                    padding: 10px 40px;
-                    display:inline-block;
-                    color:white;
-                    
-                }
-    
-                .class2{
-                  
-                    left:110px}
-    
-                .class3{
-                    
-                    left:210px; }
-    
-                .class4{
-            
-                    left:320px;  }
-    
-                .class5{
-                    left:420px;
-                }
-
-            }
