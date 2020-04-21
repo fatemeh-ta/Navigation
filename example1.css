@@ -1,3 +1,9 @@
+.container{
+    width:100%;
+    margin-right:auto;
+    margin-left: auto;
+}
+
 ul {
     list-style-type:none;
     margin:0;
@@ -39,6 +45,7 @@ li a {
         width:100%;
         margin-right:auto;
         margin-left: auto;
+        margin-top: 50px;
     }
 
     .container::after{
@@ -88,4 +95,16 @@ li a {
         z-index:1;
     }
 }
+/*css reset*/
+ul,li,a,h1,p,div,body,span,html{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+
 
